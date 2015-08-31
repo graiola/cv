@@ -1,0 +1,142 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.1 (9/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{savesym}
+\savesymbol{fax}
+%
+%\usepackage{bbding,pifont}
+%\usepackage[ps]{skak}
+%\usepackage{china2e}
+
+\usepackage{marvosym}
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage[utf8]{inputenc}
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Gennaro} % Your first name
+\familyname{Raiola} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Curriculum Vitae}
+\address{78, Bld des Marechaux}{91120 Palaiseau, FR}
+\email{gennaro.raiola@ensta-paristech.fr}
+\homepage{www.gennaroIsCool.com}%{web} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+%\extrainfo{additional information}
+%\photo[100pt][0.4pt]{pictures/noplugs.jpg} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+\begin{center}
+%\textit{Hard-working, flexible Robotics Engineer with a strong profession in clean code development; seeking new challenges to foster autonomous devices with powerful hardware and artificial intelligence; Passionate and goal oriented team player \\
+%\#Robotics, \#Control, \#Machine Learning, \#Software Engineering, \#ROS, \#C++, \#Python, \#Matlab,  
+%}
+\end{center}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+\section{Education}
+\cvitem{2013-current}{\emph{Ph.D. student in Robotics} \newline{} at ENSTA-ParisTech.}
+%\cvitem{2012}{\emph{Master's thesis work on Motion Primitives} under the supervision of Prof. Freek Stulp and Prof. Bruno Siciliano.}
+\cvitem{2010-2012}{\emph{Master's Degree (M.Sc) with honor in Automation and Control Engineering} \newline{} given by the University of Naples "Federico II".}
+\cvitem{2006-2010}{\emph{Bachelor's Degree (B.Sc) in Computer Engineering} \newline{} given by the University of Naples "Federico II".}
+
+
+
+\section{Profession}
+\subsection{Employer}
+
+\cvitem{2012-2013}{\emph{Research Engineer in Motion Control of Humanoid Robots} \newline{} 
+		at PAL Robotics S.L. Barcelona \href{http://www.pal-robotics.com}\Mundus \underline {www}} %%{{\Mundus \underline {www}}}}
+
+\hspace{2em}
+
+\section{Research \& Projects}
+
+\cvitem{Ph.D. Thesis}{"Probabilistic virtual guides for co-manipulation" \newline{}
+	\footnotesize{\underline{Supervisors}: Prof. Freek Stulp (ENSTA-ParisTech), Dr. Xavier Lamy (CEA-List). \newline{}
+	\underline{Topics}: Virtual Fixtures, Industrial Applications, Control, Machine Learning.}}
+
+\cvitem{M.Sc. Thesis}{"Learning Parameterized Skills through Models with Expanded Kernels" \newline{} 
+	\footnotesize{\underline{Supervisors}: Prof. Bruno Siciliano (PRISMA lab.) and Prof. Freek Stulp (ENSTA-ParisTech). \newline{}
+	\underline{Topics}: Motion Primitives, Control, Machine Learning.}}
+
+%\cvitem{Software}{"m3ros_control" \href{https://github.com/graiola/m3ros_control}{ \Mundus \underline {github}} \newline{}
+%	\footnotesize{C++ bridge to integrate the control layer of the Meka robot into a ROS environment.}}
+
+\cvitem{Software}{"m3ros-control" \href{https://github.com/graiola/m3ros_control}{ \Mundus \underline {github}} \newline{}
+	\footnotesize{C++ bridge to integrate the control layer of the Meka robot into a ROS environment.}}
+
+\cvitem{Software}{"DmpBbo" \href{https://github.com/stulp/dmpbbo}{ \Mundus \underline {github}} \newline{}
+	\footnotesize{C++ framework for motion primitives and black-box optimization.}}
+
+\cvitem{Software}{"Stack-of-Task" \href{https://github.com/stack-of-tasks}{ \Mundus \underline {github}} \newline{}
+	\footnotesize{Integration of the stack of tasks inverse kinematics solver on the Reem-H and Reem-C robots at PAL Robotics.}}
+
+\hspace{2em}
+
+\section{Publications}
+
+\cvitem{2015}{Gennaro Raiola, Xavier Lamy, and Freek Stulp. \newline{}
+"Co-manipulation with Multiple Probabilistic Virtual Guides". \newline{}
+In \emph{International Conference on Intelligent Robots and Systems (IROS).}}
+
+\cvitem{2015}{Gennaro Raiola, Pedro Rodriguez-Ayerbe, Xavier Lamy, Sami Tliba, and Freek Stulp. \newline{}
+"Parallel Guiding Virtual Fixtures: Control and Stability". \newline{}
+In \emph{IEEE Multi-Conference on Systems and Control (MSC).}}
+
+\cvitem{2014}{Freek Stulp, Laura Herlant, Antoine Hoarau, and Gennaro Raiola. \newline{}
+"Simultaneous On-line Discovery and Improvement of Robotic Skill Options". \newline{}
+In \emph{International Conference on Intelligent Robots and Systems (IROS).}}
+
+\cvitem{2013}{Freek Stulp, Gennaro Raiola, Antoine Hoarau, Serena Ivaldi, and Olivier Sigaud. \newline{}
+"Compact Parameterized Skills with a Single Regression". \newline{}
+In \emph{IEEE-RAS International Conference on Humanoid Robots.}}
+
+
+\section{Languages}
+\cvitem{italian}{native proficiency}
+\cvitem{english}{professional working proficiency}
+\cvitem{french}{limited proficiency}
+\cvitem{spanish}{basic knowledge}
+%----------------------------------------------------------------------------------------
+
+\end{document}
