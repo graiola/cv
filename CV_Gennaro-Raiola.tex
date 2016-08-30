@@ -23,7 +23,7 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+\documentclass[12pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
 
 \moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
@@ -36,6 +36,7 @@
 %\usepackage{china2e}
 
 \usepackage{marvosym}
+\usepackage{fontawesome}
 \usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
 \usepackage[utf8]{inputenc}
 \usepackage[scale=0.75]{geometry} % Reduce document margins
@@ -65,6 +66,8 @@
 
 \makecvtitle % Print the CV title
 
+
+
 \begin{center}
 %\textit{Hard-working, flexible Robotics Engineer with a strong profession in clean code development; seeking new challenges to foster autonomous devices with powerful hardware and artificial intelligence; Passionate and goal oriented team player \\
 %\#Robotics, \#Control, \#Machine Learning, \#Software Engineering, \#ROS, \#C++, \#Python, \#Matlab,  
@@ -75,12 +78,11 @@
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
 \section{Education}
-\cvitem{2015-current}{\emph{Ph.D. student in Robotics} \newline{} at CEA-List (Commissariat à l'énergie atomique et aux énergies alternatives) \Mundus \href{http://www-list.cea.fr/en/}{ \underline{www}}.}
-\cvitem{2013-2015}{\emph{Ph.D. student in Robotics} \newline{} at Robotics and Computer Vision Lab - ENSTA-ParisTech \Mundus \href{http://cogrob.ensta-paristech.fr/}{ \underline{www}}.}
+\cvitem{2016-current}{\emph{Ph.D. student in Robotics} \newline{} at CEA-List (French Alternative Energies and Atomic Energy Commission) \newline \Mundus \href{http://www-list.cea.fr/en/}{ \underline{www}}.}
+\cvitem{2014-2015}{\emph{Ph.D. student in Robotics} \newline{} at Robotics and Computer Vision Lab - ENSTA-ParisTech \Mundus \href{http://cogrob.ensta-paristech.fr/}{ \underline{www}}.}
 %\cvitem{2012}{\emph{Master's thesis work on Motion Primitives} under the supervision of Prof. Freek Stulp and Prof. Bruno Siciliano.}
 \cvitem{2010-2012}{\emph{Master's Degree (M.Sc) with honor in Automation and Control Engineering} \newline{} given by the University of Naples "Federico II".}
 \cvitem{2006-2010}{\emph{Bachelor's Degree (B.Sc) in Computer Engineering} \newline{} given by the University of Naples "Federico II".}
-
 
 
 \section{Profession}
@@ -111,17 +113,29 @@
 
 \subsection{Software projects}
 
-\cvitem{Software}{"virtual-fixtures" \href{https://github.com/graiola/virtual-fixtures}{ \Mundus \underline {github}} \newline{}
-	\footnotesize{Libraries of virtual guides for co-manipulation.}}
+\cvitem{Software}{"virtual-fixtures" 
+\href{https://github.com/graiola/virtual-fixtures}{\faGithub \underline{}} 
+\href{https://www.youtube.com/watch?v=K8xCxh6U_yg}{\faPlayCircle \underline{}}
+\newline{}
+\footnotesize{Library of virtual guides for co-manipulation.}}
 
-\cvitem{Software}{"m3ros-control" \href{https://github.com/graiola/m3ros_control}{ \Mundus \underline {github}} \newline{}
-	\footnotesize{C++ bridge to integrate the control layer of the Meka robot into a ROS environment.}}
+\cvitem{Software}{"m3ros-control" 
+\href{https://github.com/graiola/m3ros_control}{\faGithub \underline{}}
+\newline{}
+\footnotesize{C++ bridge to integrate the control layer of the Meka robot into a ROS environment.}}
 
-\cvitem{Software}{"DmpBbo" \href{https://github.com/stulp/dmpbbo}{ \Mundus \underline {github}} \newline{}
-	\footnotesize{C++ framework for motion primitives and black-box optimization.}}
+\cvitem{Software}{"DmpBbo" 
+\href{https://github.com/stulp/dmpbbo}{\faGithub \underline {}} 
+\href{https://www.youtube.com/watch?v=MAiw3Ke7bh8}{\faPlayCircle \underline{}}
+\href{https://www.youtube.com/watch?list=PLFxFrY0V2V0XbA0yW-MwFHLsK5mHOQ1mh&v=R7LWkh1UMII}{\faPlayCircle \underline{}}
+\newline{}
+\footnotesize{C++ framework for motion primitives and black-box optimization.}}
 
-\cvitem{Software}{"Stack-of-Task" \href{https://github.com/stack-of-tasks}{ \Mundus \underline {github}} \newline{}
-	\footnotesize{Integration of the stack of tasks inverse kinematics solver on the Reem-H and Reem-C robots at PAL Robotics.}}
+\cvitem{Software}{"Stack-of-Task" 
+\href{https://github.com/stack-of-tasks}{\faGithub \underline{}}
+\href{https://www.youtube.com/watch?v=lmE5RmvkAhQ}{\faPlayCircle \underline{}} 
+\newline{}
+\footnotesize{Integration of the stack of tasks inverse kinematics solver on the Reem-H and Reem-C robots at PAL Robotics.}}
 
 \hspace{2em}
 
@@ -158,7 +172,10 @@ In \emph{IEEE-RAS International Conference on Humanoid Robots.}}
 \cvitem{italian}{native proficiency}
 \cvitem{english}{professional working proficiency}
 \cvitem{french}{limited working proficiency}
-\cvitem{spanish}{basic knowledge}
+%\cvitem{spanish}{basic knowledge}
+
+
+%Autorizzo il trattamento dei miei dati personali ai sensi del Decreto Legislativo 30 giugno 2003, n. 196 “Codice in materia di protezione dei dati personali”
 
 %----------------------------------------------------------------------------------------
 
