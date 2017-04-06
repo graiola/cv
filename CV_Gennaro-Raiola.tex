@@ -25,7 +25,7 @@
 
 \documentclass[12pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
 
-\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 
 \usepackage{savesym}
@@ -52,7 +52,7 @@
 
 % All information in this block is optional, comment out any lines you don't need
 \title{Curriculum Vitae}
-\address{78, Bld des Marechaux}{91120 Palaiseau, FR}
+\address{Wooldriksweg 134}{7512 BE Enschede, NL}
 \email{gennaro.raiola@gmail.com}
 \homepage{perso.ensta-paristech.fr/\textasciitilde raiola/}
 %{web} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
@@ -78,7 +78,8 @@
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
 \section{Education}
-\cvitem{2016-Currently}{\emph{Ph.D. student in Robotics} \newline{} at CEA-List (French Alternative Energies and Atomic Energy Commission) \newline \Mundus \href{http://www-list.cea.fr/en/}{ \underline{www}}.}
+\cvitem{2017-current}{\emph{Post-Doc} \newline{} at Robotics and Mechatronics group, University of Twente  \newline \Mundus \href{https://www.ram.ewi.utwente.nl/}{ \underline{www}}.}
+\cvitem{2016-2017}{\emph{Ph.D. student in Robotics} \newline{} at CEA-List (French Alternative Energies and Atomic Energy Commission) \newline \Mundus \href{http://www-list.cea.fr/en/}{ \underline{www}}.}
 \cvitem{2014-2015}{\emph{Ph.D. student in Robotics} \newline{} at Robotics and Computer Vision Lab - ENSTA-ParisTech \Mundus \href{http://cogrob.ensta-paristech.fr/}{ \underline{www}}.}
 %\cvitem{2012}{\emph{Master's thesis work on Motion Primitives} under the supervision of Prof. Freek Stulp and Prof. Bruno Siciliano.}
 \cvitem{2010-2012}{\emph{Master's Degree (M.Sc) with honor in Automation and Control Engineering} \newline{} given by the University of Naples "Federico II".}
@@ -88,7 +89,6 @@
 
 \section{Profession}
 %\subsection{Employer}
-
 \cvitem{2012-2013}{\emph{Research Engineer in Motion Control of Humanoid Robots} \newline{} 
 		at PAL Robotics S.L. Barcelona \Mundus \href{http://www.pal-robotics.com}{ \underline{www}}.} %%{{\Mundus \underline {www}}}}
 
@@ -96,7 +96,11 @@
 
 \section{Research}
 
-\cvitem{Ph.D. Thesis}{"Probabilistic virtual guides for co-manipulation" \newline{}
+\cvitem{Post-doc}{Energy based control strategies for prosthetics \newline{}
+	\footnotesize{\underline{Supervisors}: Prof. Stefano Stramigioli. \newline{}
+	\underline{Topics}: Controls, Passivity.}}
+
+\cvitem{Ph.D. Thesis}{"Co-manipulation with a library of Virtual Guides" \newline{}
 	\footnotesize{\underline{Supervisors}: Prof. Freek Stulp (ENSTA-ParisTech), Dr. Xavier Lamy (CEA-List). \newline{}
 	\underline{Topics}: Cobotics, Industrial applications, Controls, Machine Learning.}}
 
@@ -104,9 +108,9 @@
 	\footnotesize{\underline{Supervisors}: Prof. Bruno Siciliano (PRISMA lab.) and Prof. Freek Stulp (ENSTA-ParisTech). \newline{}
 	\underline{Topics}: Motion Primitives, Machine Learning.}}
 
-\vspace{2.0cm}
+%\vspace{2.0cm}
 
-\hspace{2em}
+%\hspace{2em}
 
 \section{Technical Skills and Software projects}
 
@@ -150,6 +154,12 @@
 
 \section{Publications}
 
+\cvitem{2017}{Gennaro Raiola, Susana Sanchez Restrepo, Pauline Chevalier, et al. \newline{}
+"Co-manipulation with a Library of Virtual Guiding Fixtures".
+%\href{https://hal-cea.archives-ouvertes.fr/hal-01170974/document}{\faFile \underline {}} 
+\newline
+Under Review for \emph{Autonomous Robots, Special Issue on Learning for Human-Robot Collaboration.}}
+
 \cvitem{2017}{Pauline Chevalier, Gennaro Raiola, Brice Isableu, Jean-Claude Martin, Christophe Bazile and Adriana Tapus. \newline{}
 "Do Sensory Preferences of Children with Autism Impact an Imitation Task with a Robot?".
 %\href{https://hal-cea.archives-ouvertes.fr/hal-01170974/document}{\faFile \underline {}} 
@@ -157,10 +167,10 @@
 In \emph{Conference on Human-Robot Interaction (HRI).}}
 
 \cvitem{2017}{Susana Sanchez Restrepo, Gennaro Raiola, Pauline Chevalier, Xavier Lamy, and Daniel Sidobre. \newline{}
-"Iterative Virtual Guides Programming for Comanipulation Robots".
+"Iterative Virtual Guides Programming for Human-Robot Comanipulation".
 %\href{https://hal-cea.archives-ouvertes.fr/hal-01170974/document}{\faFile \underline {}} 
 \newline
-Under Review for \emph{The International Conference on Robotics and Automation (ICRA).}}
+Under Review for \emph{IEEE International Conference on Advanced Intelligent Mechatronics (AIM).}}
 
 \cvitem{2015}{Gennaro Raiola, Xavier Lamy, and Freek Stulp. \newline{}
 "Co-manipulation with Multiple Probabilistic Virtual Guides".
@@ -192,8 +202,11 @@ In \emph{IEEE-RAS International Conference on Humanoid Robots.}}
 
 \section{Service}
 
-\cvitem{}{Reviewer for international conferences:
+\cvitem{Open-source}{Maintainer of ros-control.}
+
+\cvitem{Research}{Reviewer for international conferences and journals:
 \begin{itemize}
+\item Autonomous Robots (Springer).
 \item The International Conference on Robotics and Automation (ICRA).
 \item IEEE-RAS International Conference on Humanoid Robots.
 \item International Conference on Intelligent Robots and Systems (IROS).
