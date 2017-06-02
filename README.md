@@ -1,3 +1,1 @@
-
-
-<img src="cv/CV_Gennaro-Raiola.pdf">
+<img src="CV_Gennaro-Raiola.pdf" alt="Click here for awesomeness">
