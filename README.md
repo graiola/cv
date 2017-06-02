@@ -3,3 +3,5 @@
         This browser does not support PDFs. Please download the PDF to view it: <a href="https://github.com/graiola/cv/blob/master/CV_Gennaro-Raiola.pdf">Download PDF</a>.</p>
     </embed>
 </object>
+
+<iframe src="https://github.com/graiola/cv/blob/master/CV_Gennaro-Raiola.pdf" style="width:718px; height:700px;" frameborder="0"></iframe>
