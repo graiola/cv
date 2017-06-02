@@ -1,2 +1,1 @@
-
-![](cv/CV_Gennaro-Raiola.pdf?raw=true)
+![](./CV_Gennaro-Raiola.pdf?raw=true)
