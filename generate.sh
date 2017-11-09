@@ -29,6 +29,6 @@ do
 done
 
 # Finally commit and push the generated files
-#git add $CV_NAME.pdf $MD_NAME
-#git commit -m "Generated files updated on $CURR_DATE"
-#git push
+git add $CV_NAME.pdf $MD_NAME $FOLDER_NAME
+git commit -m "Generated files updated on $CURR_DATE"
+git push
