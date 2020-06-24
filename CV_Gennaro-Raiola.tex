@@ -19,6 +19,14 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\makeatletter
+\@ifpackageloaded{moderncvstyleclassic}{%
+\let\oldsection\section%
+\renewcommand{\section}[1]{\leavevmode\unskip\vspace*{-\baselineskip}\oldsection{#1}}%
+}{%
+}
+\makeatother
+
 %----------------------------------------------------------------------------------------
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
@@ -71,32 +79,64 @@
 
 
 \section{Fields of interest}
-Robotics, programming, human-robot interaction, motion control, force control, impedance/admittance control, inverse kinematics, DevOps.
+Robotics, programming, human-robot interaction, motion control, force control, impedance control, inverse kinematics, DevOps.
 
 \section{Profession}
 
-\cvitem{09/2019-present}{\emph{Post-Doc} @ Jet Propulsion Laboratory (NASA-JPL), Pasadena (CA), United States \Mundus \href{https://www.jpl.nasa.gov/}{ \underline{www}} – Demonstration of autonomous berthing, assembly and installation of scientific payloads using the robotic platform PROPS: for this project, I am working on the state estimation and docking procedure for the incoming payload, which is performed using Kalman filtering via pose measurements of the payload extracted from an AprilTag detector. Once the payload is on an interception course with the robot, docking is performed by means of inverse kinematics and force control. This work has been conducted in preparation of a paper with the title \emph{Validating an Architecture for Robotic Assembly and Servicing of Hosted Payloads on a Persistent Platform}.
-Previously I was working with the same platform on two other projects in the context of robotics space assembly: autonomous assembly of a starshade and of a satellite dish, and assembly of instruments using fiducials and force control. During my work at JPL I have gained experience with the casah2 software architecture, realize software modules for it, and integrate some of its functionalities with the robotic operating system (ROS).}
+\cventry{09/2019--Present}{Post-Doc}{Jet Propulsion Laboratory (NASA-JPL)  \href{https://www.jpl.nasa.gov/}{\Mundus}}{Pasadena, CA}{United States}{
+At JPL I worked on demonstration of autonomous berthing, assembly and installation of scientific payloads using the robotic platform PROPS. 
+\begin{itemize}
+\item Autonomous berthing:
+\begin{itemize}
+\item created a state estimator to track the full pose and velocity of an incoming payload using Kalman filtering via a fiducial detector,
+\item developed a new module for casah2 to generate coordinated motions for the robotic arm in order to intercept and dock the incoming payload by means of inverse kinematics and force control,
+\item performed experiments in preparation for the paper \emph{Validating an Architecture for Robotic Assembly and Servicing of Hosted Payloads on a Persistent Platform},
+\item gained experience with the casah2 software architecture and the m3tk simulation software,
+\item created new modules and autonomous behaviors for casah2,
+\item integrated some of the functionalities of casah2 with the robotic operating system (ROS).
+\end{itemize}
+\item Autonomous assembly:
+\begin{itemize}
+\item developed code to perform assembly of instruments with PROPS using fiducial movements for localization and positioning of the instrument and force control for interaction,
+\item performed two demos in which the robot is able to autonomously assemble a starshade and a satellite dish.
+\end{itemize}
+\end{itemize}}
 
-\cvitem{09/2017-06/2019}{\emph{Post-Doc} @ Istituto Italiano di Tecnologia (IIT), Genoa, Italy \Mundus \href{https://www.iit.it/research/lines/dynamic-legged-systems}{ \underline{www}} – During my work at IIT, I had the opportunity to work on several aspects of the development and maintenance of software and electronics for the quadruped robots HyQ and HyQReal. I was responsible for the development of a real-time control framework and communication system with EtherCAT for the robots. I developed the software control architecture with ROS-Control, in order to make the robot capable of executing different types of gaits (e.g. crawl, trot, etc.) in complex and changing terrains. I also developed the low level safety software layer to protect the robot hardware and human operators. 
-I was also responsible for the DevOps processes, which included: creating and maintaining fully automated CI/CD pipelines for code testing and deployment using GitLab-CI, deploying apt servers to track the software dependencies, and developing Docker containers for code testing and development. 
-For the design of HyQReal, I was responsible for the electronics and low level software, with a focus on sensor integration and calibration. I also completed research to create a novel whole-body locomotion framework for quadrupedal robots using inverse dynamics and task optimization which led to the publication of the journal paper \emph{A simple yet effective whole-body locomotion framework for quadruped robots} (currently under review).
-With this work, my team and I cooperated with external work groups such as Moog and Vodafone to define the requirements and functionalities of the robots for various real-world scenarios.}
+\cventry{09/2017--06/2019}{Post-Doc}{Istituto Italiano di Tecnologia (IIT)  \href{https://www.iit.it/research/lines/dynamic-legged-systems}{\Mundus}}{Genoa}{Italy}{
+During my work at IIT, I had the opportunity to work on several aspects of the development and maintenance of software and electronics for the quadruped robots HyQ and HyQReal \href{https://www.youtube.com/watch?v=pLsNs1ZS_TI&t=1s}{\faPlayCircle}.
+\begin{itemize}
+\item Developed a real-time control framework and communication system with EtherCAT,
+\item developed the software control architecture with ROS-Control, in order to make the robot capable of executing different types of gaits (e.g. crawl, trot, etc.) in complex and changing terrains,
+\item developed the low level safety software layer to protect the robot hardware and human operators.
+\item DevOps processes, including: 
+\begin{itemize}
+\item creating and maintaining fully automated CI/CD pipelines for code testing and deployment using GitLab-CI,
+\item deploying apt servers to track the software dependencies,
+\item developing Docker containers for code testing and development. 
+\end{itemize}
+\item Sensor integration and calibration for the HyQReal robot.
+\item Research work to create a novel whole-body locomotion framework for quadrupedal robots using inverse dynamics and task optimization which led to the publication of the journal paper \emph{A simple yet effective whole-body locomotion framework for quadruped robots} (currently under review) \href{https://github.com/graiola/wbc-setup}{\faGithub}.
+\item Collaboration with external work groups such as Moog and Vodafone to define the requirements and functionalities of the robots for various real-world scenarios.
+\end{itemize}}
 
-\cvitem{03/2017-07/2017}{\emph{Post-Doc} @ Robotics and Mechatronics group, University of Twente, Enschede, The Netherlands. \Mundus \href{https://www.ram.ewi.utwente.nl/}{ \underline{www}} - At the University of Twente, I worked on the development of a safety- and energy-aware impedance controller for the KUKA LWR 4+ robotic arm. This led to the publication of the journal paper \emph{Development of a Safety and Energy Aware Impedance Controller for Collaborative Robots} on IEEE Robotics and Automation Letters which was selected for presentation at ICRA 2018.}
+\cventry{03/2017--07/2017}{Post-Doc}{Robotics and Mechatronics group, University of Twente \href{https://www.ram.ewi.utwente.nl/}{\Mundus}}{Enschede}{The Netherlands}{
+At the University of Twente, I worked on the development of a safety- and energy-aware impedance controller for the KUKA LWR 4+ robotic arm \href{https://www.youtube.com/watch?v=tFSSHXn5cGI}{\faPlayCircle}. This led to the publication of the journal paper \emph{Development of a Safety and Energy Aware Impedance Controller for Collaborative Robots} on IEEE Robotics and Automation Letters which was selected for presentation at ICRA 2018.}
 
-\cvitem{01/2016-12/2016}{\emph{Ph.D. student in Robotics} @ CEA-List (French Alternative Energies and Atomic Energy Commission - Laboratory for Integration of Systems and Technology), Gif-sur-Yvette, France. \Mundus \href{http://www-list.cea.fr/en/}{ \underline{www}} - During the last year of my PhD, I had the opportunity to transfer my research results to a startup at CEA-List (\href{https://www.isybot.com/}{ISybot}). This led to the  development of a force controller to generate virtual guides through kinesthetic teaching to be used within the software framework of the startup's collaborative robot.}
+\cventry{01/2016-12/2016}{Ph.D. student in Robotics}{CEA-List (French Alternative Energies and Atomic Energy Commission - Laboratory for Integration of Systems and Technology) \href{http://www-list.cea.fr/en/}{\Mundus}}{Gif-sur-Yvette}{France}{
+During the last year of my PhD, I had the opportunity to transfer my research results to a startup at CEA-List (\href{https://www.isybot.com/}{\underline{ISybot}}). This led to the  development of a force controller to generate virtual guides through kinesthetic teaching to be used within the software framework of the startup's collaborative robot \href{https://www.youtube.com/watch?v=dYPGD8K_-hc}{\faPlayCircle}, \href{https://github.com/graiola/virtual-fixtures}{\faGithub}.}
 
-\cvitem{05/2013-12/2013}{\emph{Research Engineer in Motion Control of Humanoid Robots} @ PAL Robotics S.L., Barcelona, Spain. \Mundus \href{http://www.pal-robotics.com}{ \underline{www}} - At PAL Robotics, I worked on a team to design and test the ROS-Control package. The aim of ROS-Control is to implement a Hardware Abstraction Layer for different kinds of robots (e.g. humanoids, manipulators, mobile robots, etc...). Via ROS-Control I implemented an inverse kinematics controller with task optimization for REEM-H and REEM-C robots in collaboration with LAAS-CNRS in France.}
+\cventry{05/2013--12/2013}{Research Engineer in Motion Control of Humanoid Robots}{PAL Robotics S.L. \href{http://www.pal-robotics.com}{\Mundus}}{Barcelona}{Spain}{
+At PAL Robotics, I worked on a team to design and test the ROS-Control package. The aim of ROS-Control is to implement a Hardware Abstraction Layer for different kinds of robots (e.g. humanoids, manipulators, mobile robots, etc.) \href{https://github.com/ros-controls}{\faGithub}. Via ROS-Control I implemented an inverse kinematics controller with task optimization for REEM-H and REEM-C robots in collaboration with LAAS-CNRS in France \href{https://www.youtube.com/watch?v=lmE5RmvkAhQ}{\faPlayCircle}.}
 
-\cvitem{09/2012-02/2013}{\emph{Internship} @ ENSTA-ParisTech and UPMC-ISIR, Paris, France. \Mundus \href{http://www.isir.upmc.fr/}{ \underline{www}} - I developed a library in Matlab and C++ to generate motion primitives and perform skill optimization for humanoid robots (MEKA, NAO, ICub and Pepper).}
+\cventry{09/2012--02/2013}{Intern}{ENSTA-ParisTech and UPMC-ISIR \href{http://www.isir.upmc.fr/}{\Mundus}}{Paris}{France}{
+I developed a library in Matlab and C++ to generate motion primitives and perform skill optimization for humanoid robots (MEKA, NAO, ICub and Pepper) \href{https://github.com/stulp/dmpbbo}{\faGithub} . This library has been successfully used with the SoftBank robot Pepper to learn and play the "ball in the cup" dexterous game \href{https://www.youtube.com/watch?v=jkaRO8J_1XI}{\faPlayCircle}.}
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
 \section{Education}
 
-\cvitem{2014-2016}{\emph{Ph.D. student in Robotics} @ Université Paris-Saclay, Palaiseau, France. \Mundus \href{https://www.universite-paris-saclay.fr/fr}{ \underline{www}}.}
+\cvitem{2014-2016}{\emph{Ph.D. student in Robotics} @ Université Paris-Saclay, Palaiseau, France. \href{https://www.universite-paris-saclay.fr/fr}{\Mundus}.}
 \cvitem{2009-2012}{\emph{Master's Degree (M.Sc) with honor in Automation and Control Engineering} \newline{} given by the University of Naples "Federico II", Naples, Italy.}
 \cvitem{2006-2009}{\emph{Bachelor's Degree (B.Sc) in Computer Engineering} \newline{} given by the University of Naples "Federico II", Naples, Italy.}
 
@@ -143,43 +183,49 @@ With this work, my team and I cooperated with external work groups such as Moog 
 \cvitem{\listitemsymbol}{Deep knowledge of Linux-based operating systems (Ubuntu, Kali, Debian).}
 \cvitem{\listitemsymbol}{Experienced with real time operating systems (RTAI Linux, Xenomai Linux, RT-PREEMPT), Kernel configuration and EtherCAT.}
 
-\section{Selected open-source software projects}
+%\section{Selected open-source software projects}
 
-\cvitem{\listitemsymbol}{"ros-control" 
-\href{https://github.com/ros-controls}{\faGithub \underline{}}
-\newline{}
-\footnotesize{Ros packages to make controllers generic to all robots.}}
+%\cvitem{\listitemsymbol}{"wbc - Whole Body Control for quadruped robots" 
+%\href{https://github.com/graiola/wbc-setup}{\faGithub \underline{}}
+%\href{https://www.youtube.com/watch?v=omQtma3-R94}{\faPlayCircle \underline{}}
+%\newline{}
+%\footnotesize{Demo using the whole body controller I developed for HyQ running inside a docker container.}}
 
-\cvitem{\listitemsymbol}{"Stack-of-Task" 
-\href{http://stack-of-tasks.github.io/authors.html}{\faGithub \underline{}}
-\href{https://www.youtube.com/watch?v=lmE5RmvkAhQ}{\faPlayCircle \underline{}} 
-\newline{}
-\footnotesize{Integration of the stack of tasks inverse kinematics solver on the REEM-H and REEM-C robots at PAL Robotics.}}
+%\cvitem{\listitemsymbol}{"ros-control" 
+%\href{https://github.com/ros-controls}{\faGithub \underline{}}
+%\newline{}
+%\footnotesize{Ros packages to make controllers generic to all robots.}}
 
-\cvitem{\listitemsymbol}{"DmpBbo" 
-\href{https://github.com/stulp/dmpbbo}{\faGithub \underline {}} 
-\href{https://www.youtube.com/watch?v=jkaRO8J_1XI}{\faPlayCircle \underline{}}
-\href{https://www.youtube.com/watch?v=MAiw3Ke7bh8}{\faPlayCircle \underline{}}
-\href{https://www.youtube.com/watch?list=PLFxFrY0V2V0XbA0yW-MwFHLsK5mHOQ1mh&v=R7LWkh1UMII}{\faPlayCircle \underline{}}
-\newline{}
-\footnotesize{C++ framework for motion primitives and black-box optimization.}}
+%\cvitem{\listitemsymbol}{"Stack-of-Task" 
+%\href{http://stack-of-tasks.github.io/authors.html}{\faGithub \underline{}}
+%\href{https://www.youtube.com/watch?v=lmE5RmvkAhQ}{\faPlayCircle \underline{}} 
+%\newline{}
+%\footnotesize{Integration of the stack of tasks inverse kinematics solver on the REEM-H and REEM-C robots at PAL Robotics.}}
+
+%\cvitem{\listitemsymbol}{"DmpBbo" 
+%\href{https://github.com/stulp/dmpbbo}{\faGithub \underline {}} 
+%\href{https://www.youtube.com/watch?v=jkaRO8J_1XI}{\faPlayCircle \underline{}}
+%\href{https://www.youtube.com/watch?v=MAiw3Ke7bh8}{\faPlayCircle \underline{}}
+%\href{https://www.youtube.com/watch?list=PLFxFrY0V2V0XbA0yW-MwFHLsK5mHOQ1mh&v=R7LWkh1UMII}{\faPlayCircle \underline{}}
+%\newline{}
+%\footnotesize{C++ framework for motion primitives and black-box optimization.}}
 
 %\cvitem{\listitemsymbol}{"mekabot" 
 %\href{https://github.com/graiola/mekabot}{\faGithub \underline{}} 
 %\newline{}
 %\footnotesize{Meka robot packages.}}
 
-\cvitem{\listitemsymbol}{"m3ros-control"
-\href{https://github.com/graiola/m3ros_control}{\faGithub \underline{}}
-\newline{}
-\footnotesize{C++ bridge to integrate the control layer of the Meka robot into a ROS environment.}}
+%\cvitem{\listitemsymbol}{"m3ros-control"
+%\href{https://github.com/graiola/m3ros_control}{\faGithub \underline{}}
+%\newline{}
+%\footnotesize{C++ bridge to integrate the control layer of the Meka robot into a ROS environment.}}
 
-\cvitem{\listitemsymbol}{"virtual-fixtures" 
-\href{https://github.com/graiola/virtual-fixtures}{\faGithub \underline{}}
-\href{https://www.youtube.com/watch?v=dYPGD8K_-hc}{\faPlayCircle \underline{}} 
-\href{https://www.youtube.com/watch?v=K8xCxh6U_yg}{\faPlayCircle \underline{}}
-\newline{}
-\footnotesize{Library of virtual guides for co-manipulation.}}
+%\cvitem{\listitemsymbol}{"virtual-fixtures" 
+%\href{https://github.com/graiola/virtual-fixtures}{\faGithub \underline{}}
+%\href{https://www.youtube.com/watch?v=dYPGD8K_-hc}{\faPlayCircle \underline{}} 
+%\href{https://www.youtube.com/watch?v=K8xCxh6U_yg}{\faPlayCircle \underline{}}
+%\newline{}
+%\footnotesize{Library of virtual guides for co-manipulation.}}
 
 \section{Publications}
 
