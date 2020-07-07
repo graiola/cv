@@ -1,0 +1,6 @@
+Gennaro Raiola is from Naples, Italy. He received his bachelor and master degrees from the University of Naples Federico II in computer and automation engineering.
+He worked at PAL robotics in Barcelona, Spain as a research engineer developing inverse kinematics for humanoid robots.
+He received his doctoral degree from University Paris-Saclay, Palaiseau, France with the following thesis: "Co-manipulation with a library of virtual guides".
+He then worked as a post-doctoral researcher with the University of Twente in Enschede, The Netherlands and the Italian Institute of Technology (IIT), Genoa, Italy, working in the field of collaborative robotics and quadrupedal robot development.
+At JPL he works on space assembly robotics.
+His interests include programming, human-robot interaction, motion control, force/impedance control, inverse kinematics and dynamics, DevOps for robotics applications.
