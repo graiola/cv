@@ -1,0 +1,53 @@
+%----------------------------------------------------------------------------------------
+%	PROFESSION SECTION
+%----------------------------------------------------------------------------------------
+
+** Post-Doc at Jet Propulsion Laboratory (NASA-JPL)
+At JPL I worked on demonstration of autonomous berthing, assembly and installation of scientific payloads using a robotic platform mounted on a testbed simulating a scientific space station. 
+Autonomous berthing:
+- created a state estimator to track the full pose and velocity of an incoming payload using Kalman filtering via a fiducial detector,
+- developed a new software module for the testbed to generate coordinated motions of the robotic arm in order to intercept and dock the incoming payload by means of inverse kinematics and force control,
+- performed experiments in preparation for the paper Validating an Architecture for Robotic Assembly and Servicing of Hosted Payloads on a Persistent Platform,
+- gained experience with the JPL testbed software architecture and the m3tk simulation software,
+- integrated some of the functionalities of the testbed with the robotic operating system (ROS).
+Autonomous assembly:
+- developed code to perform assembly of instruments using fiducial movements for localization and positioning of the instrument and force control for interaction,
+- performed two demos in which the robot is able to autonomously assemble a starshade and a satellite dish,
+- created new modules and autonomous behaviors for the testbed.
+
+** Post-Doc at Istituto Italiano di Tecnologia (IIT)
+During my work at IIT, I had the opportunity to work on several aspects of the development and maintenance of software and electronics for the quadruped robots HyQ and HyQReal.
+- Developed a real-time control framework and communication system with EtherCAT,
+- developed the software control architecture with ROS-Control, in order to make the robot capable of executing different types of gaits (e.g. crawl, trot, etc.) in complex and changing terrains,
+- developed the low level safety software layer to protect the robot hardware and human operators.
+- DevOps processes, including: 
+	* creating and maintaining fully automated CI/CD pipelines for code testing and deployment using GitLab-CI,
+	* deploying apt servers to track the software dependencies,
+	* developing Docker containers for code testing and development. 
+- Sensor integration and calibration for the HyQReal robot.
+- Research work to create a novel whole-body locomotion framework for quadrupedal robots using inverse dynamics and task optimization which led to the publication of the journal paper "A simple yet effective whole-body locomotion framework for quadruped robots".
+- Collaboration with external work groups such as Moog and Vodafone to define the requirements and functionalities of the robots for various real-world scenarios.
+
+** Post-Doc at Robotics and Mechatronics group, University of Twente
+At the University of Twente, I worked on the development of a safety- and energy-aware impedance controller for the KUKA LWR 4+ robotic arm. 
+Publication of the journal paper Development of a Safety and Energy Aware Impedance Controller for Collaborative Robots on IEEE Robotics and Automation Letters which was selected for presentation at ICRA 2018.
+
+** Ph.D. student in Robotics at CEA-List (French Alternative Energies and Atomic Energy Commission - Laboratory for Integration of Systems and Technology)
+During the last year of my PhD, I had the opportunity to transfer my research results to a startup at CEA-List
+- development of a force controller to generate virtual guides through kinesthetic teaching to be used within the software framework of the startup's collaborative robot.
+
+** Research Engineer in Motion Control of Humanoid Robots at PAL Robotics S.L.
+At PAL Robotics, I worked on a team to design and test the ROS-Control package. The aim of ROS-Control is to implement a Hardware Abstraction Layer for different kinds of robots (e.g. humanoids, manipulators, mobile robots, etc.). 
+Implemented via ROS-Control an inverse kinematics controller with task optimization for REEM-H and REEM-C robots in collaboration with LAAS-CNRS in France.
+
+** Intern at ENSTA-ParisTech and UPMC-ISIR
+I developed a library in Matlab and C++ to generate motion primitives and perform skill optimization for humanoid robots (MEKA, NAO, ICub and Pepper).
+This library has been successfully used with the SoftBank robot Pepper to learn and play the "ball in the cup" dexterous game.
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+2014--2016 Ph.D. student in Robotics at Université Paris-Saclay, Palaiseau, France
+2009--2012 Master's Degree (M.Sc) cum laude in Automation and Control Engineering at University of Naples "Federico II", Naples, Italy
+2006--2009 Bachelor's Degree (B.Sc) in Computer Engineering at University of Naples "Federico II", Naples, Italy
