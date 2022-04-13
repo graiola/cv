@@ -8,6 +8,9 @@ MD_NAME="README.md"
 FOLDER_NAME="images"
 CURR_DATE=`date`
 
+sudo apt-get update
+sudo apt-get install texlive-xetex texlive-lang-other texlive-latex-recommended texlive-fonts-extra
+
 if [ ! -d ./$FOLDER_NAME ]; then
     mkdir $FOLDER_NAME
 fi
