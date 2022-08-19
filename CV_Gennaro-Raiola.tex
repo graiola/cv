@@ -31,7 +31,7 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[12pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
 
 \moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
@@ -70,39 +70,47 @@
 
 \makecvtitle % Print the CV title
 
-
 %\begin{center}
 %\textit{Hard-working, flexible Robotics Engineer with a strong profession in clean code development; seeking new challenges to foster autonomous devices with powerful hardware and artificial intelligence; Passionate and goal oriented team player \\
 %\#Robotics, \#Control, \#Machine Learning, \#Software Engineering, \#ROS, \#C++, \#Python, \#Matlab,  
 %}
 %\end{center}
 
-
 \section{Fields of interest}
 Robotics, programming, human-robot interaction, motion control, force control, inverse kinematics and dynamics, whole-body control, hardware integration, embedded, DevOps, ROS.
-
-\section{Selected projects}
-
-\cvitem{\listitemsymbol}{"\textbf{WoLF} - Whole-body Locomotion Framework for quadruped robots" 
-\href{https://github.com/graiola/wolf-setup}{\faGithub \underline{}}}
-
-\cvitem{\listitemsymbol}{"\textbf{ros-controls} - a ROS based hardware interface to make controllers generic to all robots" 
-\href{https://github.com/ros-controls}{\faGithub \underline{}}}
-
-\cvitem{\listitemsymbol}{"\textbf{DmpBbo} - C++ framework for Dynamic Motion Primitives and Black-Box Optimization" 
-\href{https://github.com/stulp/dmpbbo}{\faGithub \underline {}}}
-
-\cvitem{\listitemsymbol}{"\textbf{rt-gui} - A real-time safe and dynamically reconfigurable graphic interface based on QT and ROS" 
-\href{https://github.com/graiola/rt_gui}{\faGithub \underline {}}}
-
 \section{Profession}
-
 %\cventry{04/2021--current}{R&D robotics engineer}{Leonardo s.p.a }{Genoa}{Italy}{ }
-
-\cventry{04/2021--current}{External collaborator}{Leonardo s.p.a.  \href{https://www.leonardocompany.com/}{\Mundus}}{Genoa}{Italy}{ }
-
-\cventry{04/2021--current}{External collaborator}{Istituto Italiano di Tecnologia (IIT)  \href{https://www.iit.it/research/lines/dynamic-legged-systems}{\Mundus}}{Genoa}{Italy}{ }
-
+\cventry{04/2021--current}{Research fellow}{Leonardo s.p.a.  \href{https://www.leonardocompany.com/}{\Mundus}}{Genoa}{Italy}{ 
+At Leonardo I work in the robotic joint lab with the Istituto Italiano di Tecnologia (IIT).
+\begin{itemize}
+\item Given my experience and seniority I am coordinating and conducting the daily activities in the laboratory:
+\begin{itemize}
+\item supervising the tasks of junior research fellows,
+\item supervising the tasks necessary to setup and start the laboratory,
+\item submitted an european project proposal for HORIZON-KDT-JU-2021-2-RIA named Edge Continuum as a backbOne of a new Digital Economy System (ECoDES),
+\item submitted a concept idea for the European Defence Found (EDF) about a Medical UGV for Localization and Extraction (MULE),
+\item definition of the activities and the necessary hardware to develop a new quadruped robotic platform for navigation and exploration of unstructured enviroments (godog).
+\item prepared demos and meeting presentations about the various activities conducted in the lab.
+\end{itemize}
+\item Technical work:
+\begin{itemize}
+\item setup of the lab computers and network,
+\item setup of the git repository and internal Docker registry,
+\item setup of the Nexus robot software and pilot station,
+\item created the kinematics and dynamics model for the ESA robot Mirror in collaboration with IIT,
+\item developed navigation and exploration algorithms for the Nexus robot,
+\item created a state estimation algorithm to track and pick boxes of various shapes with robotic manipulators (internal project with Leonardo BU automation divison),
+\item created virtual enviroments with Docker to ease the deployment of AI and vision software on the robots,
+\item contributed to the preparation of the following papers:
+\begin{itemize}
+\item "WoLF: the Whole-body Locomotion Framework for Quadruped Robots" (accepted).
+\item "Target-Referred DMPs for Learning Bimanual Tasks from Shared-Autonomy Telemanipulation" (under review).
+\item "FollowMe: a Robust Person Following Framework Based on Visual Re-Identification and Gestures" (under review).
+\end{itemize}
+\end{itemize}
+\end{itemize}
+}
+%\cventry{04/2021--current}{External collaborator}{Istituto Italiano di Tecnologia (IIT)  \href{https://www.iit.it/research/lines/dynamic-legged-systems}{\Mundus}}{Genoa}{Italy}{ }
 \cventry{09/2019--10/2020}{Postdoctoral researcher}{Jet Propulsion Laboratory (NASA-JPL)  \href{https://www.jpl.nasa.gov/}{\Mundus}}{Pasadena, CA}{United States}{
 At JPL I worked on demonstration of autonomous berthing, assembly and installation of scientific payloads using a robotic platform mounted on a testbed simulating a scientific space station. 
 \begin{itemize}
@@ -169,7 +177,6 @@ This library has been successfully used with the SoftBank robot Pepper to learn 
 \cventry{2014--2016}{Ph.D. student in Robotics}{École polytechnique (Université Paris-Saclay) \href{https://www.universite-paris-saclay.fr/fr}{\Mundus}}{Palaiseau}{France}{}
 \cventry{2009--2012}{Master's Degree (M.Sc) cum laude in Automation and Control Engineering}{University of Naples "Federico II"}{Naples}{Italy}{}
 \cventry{2006--2009}{Bachelor's Degree (B.Sc) in Computer Engineering}{University of Naples "Federico II"}{Naples}{Italy}{}
-
 %\vspace{0.25cm}
 
 %\section{Research Interests}
@@ -202,6 +209,9 @@ This library has been successfully used with the SoftBank robot Pepper to learn 
 
 %\subsection{Software projects}
 
+%----------------------------------------------------------------------------------------
+%	TECHNICAL SKILLS SECTION
+%----------------------------------------------------------------------------------------
 \section{Technical skills}
 
 \cvitem{\listitemsymbol}{Proficient in the following programming languages: \textbf{C}, \textbf{C++} and \textbf{Matlab}}
@@ -212,6 +222,23 @@ This library has been successfully used with the SoftBank robot Pepper to learn 
 \cvitem{\listitemsymbol}{Competent with \textbf{Docker} and \textbf{Virtual Machines} deployment for testing and development.}
 \cvitem{\listitemsymbol}{Deep knowledge of \textbf{Linux}-based operating systems (Ubuntu, Kali, Debian).}
 \cvitem{\listitemsymbol}{Experienced with real time operating systems \textbf{RTOS} (RTAI, Xenomai, RT-PREEMPT), Kernel configuration and \textbf{EtherCAT}.}
+
+%----------------------------------------------------------------------------------------
+%	SELECTED PROJECTS SECTION
+%----------------------------------------------------------------------------------------
+\section{Selected projects}
+
+\cvitem{\listitemsymbol}{"\textbf{WoLF} - Whole-body Locomotion Framework for quadruped robots" 
+\href{https://github.com/graiola/wolf-setup}{\faGithub \underline{}}}
+
+\cvitem{\listitemsymbol}{"\textbf{ros-controls} - a ROS based hardware interface to make controllers generic to all robots" 
+\href{https://github.com/ros-controls}{\faGithub \underline{}}}
+
+\cvitem{\listitemsymbol}{"\textbf{DmpBbo} - C++ framework for Dynamic Motion Primitives and Black-Box Optimization" 
+\href{https://github.com/stulp/dmpbbo}{\faGithub \underline {}}}
+
+\cvitem{\listitemsymbol}{"\textbf{rt-gui} - A real-time safe and dynamically reconfigurable graphic interface based on QT and ROS" 
+\href{https://github.com/graiola/rt_gui}{\faGithub \underline {}}}
 
 %\section{Selected open-source software projects}
 
@@ -388,12 +415,12 @@ In \emph{IEEE Robotics and Automation Letters.}
 %\end{itemize}
 %}
 
-%\vspace{0.25cm}
+\vspace{-0.5cm}
 
 \section{Languages}
-\cvitem{italian}{native proficiency}
-\cvitem{english}{professional working proficiency}
-\cvitem{french}{limited working proficiency}
+\cvitem{\textbf{italian}}{native proficiency}
+\cvitem{\textbf{english}}{professional working proficiency}
+\cvitem{\textbf{french}}{limited working proficiency}
 
 %\vspace{0.25cm}
 
