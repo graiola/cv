@@ -64,6 +64,9 @@
 %\photo[100pt][0.4pt]{photo_sea.png} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
 %\quote{}
 
+
+\newcommand{\logo}[1]{\includegraphics[height=20mm,width=20mm]{logos/#1.png}}
+
 %----------------------------------------------------------------------------------------
 
 \begin{document}
@@ -80,27 +83,25 @@
 Robotics, programming, human-robot interaction, motion control, force control, inverse kinematics and dynamics, whole-body control, hardware integration, embedded, DevOps, ROS.
 \section{Profession}
 %\cventry{04/2021--current}{R&D robotics engineer}{Leonardo s.p.a }{Genoa}{Italy}{ }
-\cventry{04/2021--current}{Research fellow}{Leonardo s.p.a.  \href{https://www.leonardocompany.com/}{\Mundus}}{Genoa}{Italy}{ 
-At Leonardo I work in the robotic joint lab with the Istituto Italiano di Tecnologia (IIT).
+\cventry{04/2021--current \logo{leonardo}}{Research fellow}{Leonardo s.p.a.  \href{https://www.leonardocompany.com/}{\Mundus}}{Genoa}{Italy}{ 
+In Leonardo I work in the joint robotic laboratory with the Italian Institute of Technology (IIT) on the development of software algorithms for autonomous navigation and locomotion of unmanned ground vehicles (UGVs) in unstructured environments \href{https://www.youtube.com/watch?v=he9AoLA0YGA&list=PLF-yhjaPBSInADZXA08dGjzwVSredTlwh}{\faPlayCircle}.
 \begin{itemize}
-\item Given my experience and seniority I am coordinating and conducting the daily activities in the laboratory:
+\item Given my experience and seniority, I coordinate and lead the daily activities of the laboratory, which include:
 \begin{itemize}
-\item supervising the tasks of junior research fellows,
+\item supervising the research activities of my group,
 \item supervising the tasks necessary to setup and start the laboratory,
-\item submitted an european project proposal for HORIZON-KDT-JU-2021-2-RIA named Edge Continuum as a backbOne of a new Digital Economy System (ECoDES),
-\item submitted a concept idea for the European Defence Found (EDF) about a Medical UGV for Localization and Extraction (MULE),
-\item definition of the activities and the necessary hardware to develop and build a new quadruped robotic platform for navigation and exploration of unstructured enviroments,
-\item prepared demos and meeting presentations about the various activities conducted in the lab.
+\item working on european project proposals,
+\item definition of the activities and the necessary hardware to develop and build a new quadruped robotic platform for navigation and exploration of unstructured enviroments.
 \end{itemize}
 \item Technical work:
 \begin{itemize}
 \item setup of the lab computers and network,
-\item setup of the git repository and internal Docker registry,
-\item setup of the Nexus robot software and pilot station,
+\item DevOps such as setup of the git repository, internal Docker registry, etc... ,
+\item setup of the robot software and pilot stations,
 \item created the kinematics and dynamics model for the ESA robot Mirror in collaboration with IIT,
-\item developed navigation and exploration algorithms for the Nexus robot,
+\item developed navigation, exploration and detection algorithms for mobile robots,
 \item created a state estimation algorithm to track and pick boxes of various shapes with robotic manipulators (internal project with Leonardo automation division),
-\item created a state estimation for the quadruped robotic platform godog,
+\item created a state estimation for control and odometry of quadruped robotic platforms,
 \item created virtual enviroments with Docker to ease the deployment of AI and vision software on the robots,
 \item contributed to the preparation of the following papers:
 \begin{itemize}
@@ -113,7 +114,7 @@ At Leonardo I work in the robotic joint lab with the Istituto Italiano di Tecnol
 \end{itemize}
 }
 %\cventry{04/2021--current}{External collaborator}{Istituto Italiano di Tecnologia (IIT)  \href{https://www.iit.it/research/lines/dynamic-legged-systems}{\Mundus}}{Genoa}{Italy}{ }
-\cventry{09/2019--10/2020}{Postdoctoral researcher}{Jet Propulsion Laboratory (NASA-JPL)  \href{https://www.jpl.nasa.gov/}{\Mundus}}{Pasadena, CA}{United States}{
+\cventry{09/2019--9/2020 \logo{nasa}}{Postdoctoral researcher}{Jet Propulsion Laboratory (NASA-JPL)  \href{https://www.jpl.nasa.gov/}{\Mundus}}{Pasadena, CA}{United States}{
 At JPL I worked on demonstration of autonomous berthing, assembly and installation of scientific payloads using a robotic platform mounted on a testbed simulating a scientific space station. 
 \begin{itemize}
 \item Autonomous berthing:
@@ -132,7 +133,7 @@ At JPL I worked on demonstration of autonomous berthing, assembly and installati
 \end{itemize}
 \end{itemize}}
 
-\cventry{09/2017--06/2019}{Postdoctoral researcher}{Istituto Italiano di Tecnologia (IIT)  \href{https://www.iit.it/research/lines/dynamic-legged-systems}{\Mundus}}{Genoa}{Italy}{
+\cventry{06/2017--06/2019 \logo{iit}}{Postdoctoral researcher}{Istituto Italiano di Tecnologia (IIT)  \href{https://www.iit.it/research/lines/dynamic-legged-systems}{\Mundus}}{Genoa}{Italy}{
 During my work at IIT, I had the opportunity to work on several aspects of the development and maintenance of software and electronics for the quadruped robots HyQ and HyQReal \href{https://www.youtube.com/watch?v=pLsNs1ZS_TI&t=1s}{\faPlayCircle}.
 \begin{itemize}
 \item Developed a real-time control framework and communication system with EtherCAT,
@@ -149,25 +150,25 @@ During my work at IIT, I had the opportunity to work on several aspects of the d
 \item Collaboration with external work groups such as Moog and Vodafone to define the requirements and functionalities of the robots for various real-world scenarios.
 \end{itemize}}
 
-\cventry{03/2017--07/2017}{Postdoctoral researcher}{Robotics and Mechatronics group, University of Twente \href{https://www.ram.ewi.utwente.nl/}{\Mundus}}{Enschede}{The Netherlands}{
+\cventry{03/2017--06/2017 \logo{twente}}{Postdoctoral researcher}{Robotics and Mechatronics group, University of Twente \href{https://www.ram.ewi.utwente.nl/}{\Mundus}}{Enschede}{The Netherlands}{
 At the University of Twente, I worked on the development of a safety- and energy-aware impedance controller for the KUKA LWR 4+ robotic arm \href{https://www.youtube.com/watch?v=tFSSHXn5cGI}{\faPlayCircle}. 
 \begin{itemize}
 \item publication of the journal paper \emph{Development of a Safety and Energy Aware Impedance Controller for Collaborative Robots} on IEEE Robotics and Automation Letters which was selected for presentation at ICRA 2018.
 \end{itemize}}
 
-\cventry{01/2016-12/2016}{Software engineer}{CEA-List (French Alternative Energies and Atomic Energy Commission - Laboratory for Integration of Systems and Technology) \href{http://www-list.cea.fr/en/}{\Mundus}}{Gif-sur-Yvette}{France}{
+\cventry{01/2016-12/2016 \logo{cea}}{Software engineer}{CEA-List (French Alternative Energies and Atomic Energy Commission - Laboratory for Integration of Systems and Technology) \href{http://www-list.cea.fr/en/}{\Mundus}}{Gif-sur-Yvette}{France}{
 During the last year of my PhD, I had the opportunity to transfer my research results to a startup at CEA-List (\href{https://www.isybot.com/}{\underline{ISybot}}). 
 \begin{itemize}
 \item development of a force controller to generate virtual guides through kinesthetic teaching to be used within the software framework of the startup's collaborative robot \href{https://www.youtube.com/watch?v=dYPGD8K_-hc}{\faPlayCircle}, \href{https://github.com/graiola/virtual-fixtures}{\faGithub}.
 \end{itemize}}
 
-\cventry{05/2013--12/2013}{Research engineer}{PAL Robotics S.L. \href{http://www.pal-robotics.com}{\Mundus}}{Barcelona}{Spain}{
+\cventry{01/2013--12/2013 \logo{pal}}{Research engineer}{PAL Robotics S.L. \href{http://www.pal-robotics.com}{\Mundus}}{Barcelona}{Spain}{
 At PAL Robotics, I worked on a team to design and test the ROS-Control package. The aim of ROS-Control is to implement a Hardware Abstraction Layer for different kinds of robots (e.g. humanoids, manipulators, mobile robots, etc.) \href{https://github.com/ros-controls}{\faGithub}. 
 \begin{itemize}
 \item implemented via ROS-Control an inverse kinematics controller with task optimization for REEM-H and REEM-C robots in collaboration with LAAS-CNRS in France \href{https://www.youtube.com/watch?v=lmE5RmvkAhQ}{\faPlayCircle}.
 \end{itemize}}
 
-\cventry{09/2012--02/2013}{Intern}{ENSTA-ParisTech and UPMC-ISIR \href{http://www.isir.upmc.fr/}{\Mundus}}{Paris}{France}{
+\cventry{06/2012--12/2012 \logo{ensta}}{Intern}{ENSTA-ParisTech and UPMC-ISIR \href{http://www.isir.upmc.fr/}{\Mundus}}{Paris}{France}{
 I developed a library in Matlab and C++ to generate motion primitives and perform skill optimization for humanoid robots (MEKA, NAO, ICub and Pepper) \href{https://github.com/stulp/dmpbbo}{\faGithub}.
 This library has been successfully used with the SoftBank robot Pepper to learn and play the "ball in the cup" dexterous game \href{https://www.youtube.com/watch?v=jkaRO8J_1XI}{\faPlayCircle}.}
 
@@ -230,10 +231,13 @@ This library has been successfully used with the SoftBank robot Pepper to learn 
 %----------------------------------------------------------------------------------------
 \section{Selected projects}
 
-\cvitem{\listitemsymbol}{"\textbf{WoLF} - Whole-body Locomotion Framework for quadruped robots" 
+\cvitem{\listitemsymbol}{"\textbf{wolf-controller} - Whole-body Locomotion Framework for quadruped robots" 
 \href{https://github.com/graiola/wolf-setup}{\faGithub \underline{}}}
 
-\cvitem{\listitemsymbol}{"\textbf{ros-controls} - a ROS based hardware interface to make controllers generic to all robots" 
+\cvitem{\listitemsymbol}{"\textbf{wolf-navigation} - Navigation stack for the whole-body locomotion framework WoLF" 
+\href{https://github.com/graiola/wolf_navigation}{\faGithub \underline{}}}
+
+\cvitem{\listitemsymbol}{"\textbf{ros-controls} - A ROS based hardware interface to make controllers generic to all robots" 
 \href{https://github.com/ros-controls}{\faGithub \underline{}}}
 
 \cvitem{\listitemsymbol}{"\textbf{DmpBbo} - C++ framework for Dynamic Motion Primitives and Black-Box Optimization" 
