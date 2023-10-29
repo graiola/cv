@@ -3,5 +3,3 @@
 ![3](images/CV_Gennaro-Raiola-3.png)
 ![4](images/CV_Gennaro-Raiola-4.png)
 ![5](images/CV_Gennaro-Raiola-5.png)
-![6](images/CV_Gennaro-Raiola-6.png)
-![7](images/CV_Gennaro-Raiola-7.png)
