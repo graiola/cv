@@ -2,4 +2,3 @@
 ![2](images/CV_Gennaro-Raiola-2.png)
 ![3](images/CV_Gennaro-Raiola-3.png)
 ![4](images/CV_Gennaro-Raiola-4.png)
-![5](images/CV_Gennaro-Raiola-5.png)
